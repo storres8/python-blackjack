@@ -53,3 +53,14 @@ class Hand():
             # if 0 number is treated as false so function will not evaluate
             self.value -= 10
             self.aces -= 1
+
+class Chips():
+    def __init__(self):
+        self.total = 100
+        self.bet = 0
+
+    def win_bet(self):
+        self.total += self.bet
+
+    def loose_bet(self):
+        self.total -= self.bet
