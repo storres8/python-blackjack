@@ -65,6 +65,7 @@ class Chips():
     def loose_bet(self):
         self.total -= self.bet
 
+
 def take_bet(chips):
 
     while True:
@@ -98,4 +99,23 @@ def hit_or_stand(deck, hand):
             print("Input error, please enter 'h' or 's' only")
             continue
 
-        break 
+        break
+
+def player_busts(player, dealer, chips):
+    print("PLAYER BUSTS")
+    chips.loose_bet()
+
+def player_wins(player, dealer, chips):
+    print("PLAYER WINS!")
+    chips.win_bet()
+
+def dealer_busts(player, dealer, chips):
+    print(PLAYER WINS! DEALER BUSTED!)
+    chips.win_bet()
+
+def dealer_wins(player, dealer, chips):
+    print("DEALER WINS!")
+    chips.loose_bet()
+
+def push(player, dealer):
+    print("DEALER AND PLAYER TIE! PUSH!")
